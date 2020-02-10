@@ -4,7 +4,13 @@ const Subscriber = require('../models/subscriber');
 
 // Getting all
 router.get('/', async (req, res) => {
-        res.send('Evgeny, hello');
+/*    try {
+        const subscribers = await Subscriber.find();
+        res.json(subscribers)
+    } catch (err) {
+        res.status(500).json({message: err.message})
+    }*/
+    res.send('Evgeny, hello');
 });
 
 // Getting One
@@ -31,9 +37,9 @@ router.patch('/:id', getSubscriber, async (req, res) => {
     if (req.body.name != null) {
         res.subscriber.name = req.body.name
     }
-/*    if (req.body.subscribedToChannel != null) {
+    if (req.body.subscribedToChannel != null) {
         res.subscriber.subscribedToChannel = req.body.subscribedToChannel
-    }*/
+    }
     try {
         const updatedSubscriber = await res.subscriber.save();
         res.json(updatedSubscriber)
@@ -62,6 +68,7 @@ async function getSubscriber(req, res, next) {
     } catch (err) {
         return res.status(500).json({message: err.message})
     }
+
     res.subscriber = subscriber;
     next()
 }
