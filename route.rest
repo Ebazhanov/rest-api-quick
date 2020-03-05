@@ -1,7 +1,7 @@
 GET http://localhost:3002/subscribers/
 
 ###
-GET http://localhost:3002/subscribers/
+GET http://localhost:3002/subscribers/15
 
 ###
 POST http://localhost:3002/subscribers
@@ -9,8 +9,7 @@ Content-Type: application/json
 
 {
   "name": "Amazing Person",
-  "subscriberToChannel": "Web Dev Simplified",
-  "Path": "asdfadf"
+  "subscribedToChannel": "Web Dev Simplified"
 }
 
 ###

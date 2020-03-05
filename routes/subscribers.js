@@ -4,18 +4,17 @@ const Subscriber = require('../models/subscriber');
 
 // Getting all
 router.get('/', async (req, res) => {
-/*    try {
+    try {
         const subscribers = await Subscriber.find();
         res.json(subscribers)
     } catch (err) {
         res.status(500).json({message: err.message})
-    }*/
-    res.send('Evgeny, hello');
+    }
 });
 
 // Getting One
 router.get('/:id', getSubscriber, (req, res) => {
-    res.json(res.subscriber.name)
+    res.json(res.subscriber)
 });
 
 // Creating one
