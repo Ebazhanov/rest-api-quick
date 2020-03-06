@@ -2,7 +2,7 @@
 
 This repository contains code demonstrating Rest API with **GET, POST, PATCH, DELETE** requests samples
 
-GET request to get all subscribers
+![&#61affe;] [x] GET request to get all subscribers
 ```shell script
 $ http://localhost:3002/subscribers/
 ```
