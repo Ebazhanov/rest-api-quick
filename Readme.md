@@ -81,7 +81,7 @@ router.patch('/:id', getSubscriber, async (req, res) => {
 });
 ```
 
-![#f93e3e](https://placehold.it/15/#f93e3e/000000?text=+) **DELETE** _request to delete one subscriber by `/id`_
+![#f93e3e](https://placehold.it/15/f93e3e/000000?text=+) **DELETE** _request to delete one subscriber by `/id`_
 
 ```shell script
 $ http://localhost:3002/subscribers/id
