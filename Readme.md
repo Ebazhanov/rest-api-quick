@@ -1,10 +1,24 @@
-Build A REST API With Node.js, Express, & MongoDB - Quick
----------------------------------------------------------
+# REST API example
 
-#### Usage 
-- [download/install/run mongoDB](https://github.com/mongodb/homebrew-brew)
-- [http://www.codebind.com/mongodb/install-mongodb-mac-os-x/](http://www.codebind.com/mongodb/install-mongodb-mac-os-x/)
-- `$ brew services start mongodb-community`
-- check connection `$ mongo MongoDB`
-- `show dbs`
-- start server `$ yarn start`
+This repository contains code demonstrating Rest API with **GET, POST, PATCH, DELETE** requests samples
+
+GET request to get all subscribers
+```shell script
+$ http://localhost:3002/subscribers/
+```
+
+```javascript
+router.get('/', async (req, res) => {
+    try {
+        const subscribers = await Subscriber.find();
+        res.json(subscribers)
+    } catch (err) {
+        res.status(500).json({message: err.message})
+    }
+});
+```
+
+## How to start the project
+- Install [MongoDB](http://www.codebind.com/mongodb/install-mongodb-mac-os-x/)
+- Run it locally `$ brew services start mongodb-community`
+- Lunch server `$ yarn start`
