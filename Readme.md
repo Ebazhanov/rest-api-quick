@@ -103,3 +103,6 @@ router.delete('/:id', getSubscriber, async (req, res) => {
 - Install [MongoDB](http://www.codebind.com/mongodb/install-mongodb-mac-os-x/)
 - Run it locally `$ brew services start mongodb-community`
 - Lunch server `$ yarn start`
+
+### Usage
+- To easily run any of request, you can use [route.rest](route.rest)
