@@ -2,7 +2,7 @@
 
 This repository contains code demonstrating Rest API with **GET, POST, PATCH, DELETE** requests samples
 
-![#61affe](https://placehold.it/15/61affe/000000?text=+) GET request to get all subscribers
+![#61affe](https://placehold.it/15/61affe/000000?text=+) **GET** _request to get all subscribers_
 
 ```shell script
 $ http://localhost:3002/subscribers/
@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 });
 ```
 
-![#61affe](https://placehold.it/15/61affe/000000?text=+) GET request to get subscriber by `/id`
+![#61affe](https://placehold.it/15/61affe/000000?text=+) **GET** _request to get subscriber by `/id`_
 
 ```shell script
 $ http://localhost:3002/subscribers/5e5fcff1dc53dec90f09512d
@@ -31,7 +31,7 @@ router.get('/:id', getSubscriber, (req, res) => {
 });
 ```
 
-![#49cc90](https://placehold.it/15/61affe/000000?text=+) POST request to create one subscriber
+![#49cc90](https://placehold.it/15/49cc90/000000?text=+) **POST** _request to create one subscriber by `/id`_
 
 ```shell script
 POST http://localhost:3002/subscribers
@@ -58,7 +58,7 @@ router.post('/', async (req, res) => {
 });
 ```
 
-![#49cc90](https://placehold.it/15/61affe/000000?text=+) UPDATE request to update one subscriber by `/id`
+![#49cc90](https://placehold.it/15/49cc90/000000?text=+) **UPDATE** _request to update one subscriber by `/id`_
 
 ```shell script
 $ http://localhost:3002/subscribers/id
@@ -81,7 +81,7 @@ router.patch('/:id', getSubscriber, async (req, res) => {
 });
 ```
 
-![#f93e3e](https://placehold.it/15/61affe/000000?text=+) DELETE request to delete one subscriber by `/id`
+![#f93e3e](https://placehold.it/15/#f93e3e/000000?text=+) **DELETE** _request to delete one subscriber by `/id`_
 
 ```shell script
 $ http://localhost:3002/subscribers/id
